@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Hizmetlerimiz</title>
+</head>
+
+<body class="w-full h-screen bg-black">
+    <iframe class="sticky top-0 w-full" src="/components/navbar.html"></iframe>
+    <iframe id="loading" class="w-full h-full mx-auto" src="/components/loading.html"></iframe>
+
+    <div id="content" class="flex flex-col items-center mb-20 text-gray-600">
+        <div class="flex flex-col w-[600px] h-[400px] bg-gray-200 p-2 rounded-[20px]  items-center space-y-[50px] hover:bg-purple-300">
+            <span class="text-3xl font-bold">Akıllı Kontratlar</span>
+            <img class="w-[200px]" src="./assets/smart-contracts.png" />
+            <p class="text-xl">Ödeme ihtiyaçlarınıza Akıllı Kontrat altyapısı ile çözüm buluyoruz.</p>
+        </div>
+    </div>
+
+    <div class="flex flex-col items-center mb-20 text-gray-600">
+        <div class="flex flex-col w-[600px] h-[400px] bg-blue-500 p-2 rounded-[20px] text-white  items-center space-y-[50px] hover:bg-purple-300 hover:text-black">
+            <span class="text-3xl font-bold">API Entegrasyonu</span>
+            <img class="w-[200px]" src="./assets/api.png" />
+            <p class="text-xl">API ve entegrasyon konusunda destek veriyoruz.</p>
+        </div>
+    </div>
+
+    <script src="/scripts/loading.js"></script>
+</body>
+</html>

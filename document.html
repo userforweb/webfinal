@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Dökümantasyon</title>
+</head>
+
+<body class="flex flex-col  w-full h-screen items-center bg-gray-100 ">
+    <iframe class="w-full" src="/components/navbar.html"></iframe>
+    <iframe id="loading" class="w-full h-full mx-auto" src="/components/loading.html"></iframe>
+
+    <div id="content">
+        <p class="text-3xl text-orange-400">
+            Size özel hazırlanan çözümü kullanmak için metamask hesabınızla giriş yapınız.
+            <img class="w-[100px]" src="./assets/metamask_logo.png" />
+        </p>
+
+        <p class="text-3xl mb-20">Ardından akıllı kontrat ile etkileşime geçebileceğiniz arayüz açılacaktır.</p>
+
+        <p class="font-extrabold  text-xl mb-[40px]">
+            Özelleştirilmiş ekranlarda aşağıdaki örnekte gözüken alanlar ile etkileime girerek işlemlerinizi gerçekleştirebileceksiniz.
+        </p>
+
+        <div class="flex gap-20">
+            <div class="flex flex-col">
+                <label for="container" class="text-2xl">Owner Address</label>
+                <input name="container"
+                    class="w-[200px] h-[50px] bg-yellow-300 px-2 rounded-[8px] placeholder-black outline-black"
+                    placeholder="Owner address" />
+            </div>
+            
+            <div class="flex flex-col">
+                <label for="container" class="text-2xl">Transaction Type</label>
+                <input name="container"
+                    class="w-[200px] h-[50px] bg-yellow-300 px-2 rounded-[8px] placeholder-black outline-black"
+                    placeholder="Transaction Type" />
+            </div>
+
+            <div class="flex flex-col">
+                <label for="container" class="text-2xl">Amount</label>
+                <input 
+                    name="container"
+                    class="w-[200px] h-[50px] bg-yellow-300 px-2 rounded-[8px] placeholder-black outline-black"
+                    placeholder="Amount" 
+                    />
+            </div>
+        </div>
+        <button class="h-[60px] px-[40px] mt-10 rounded-[20px] text-xl bg-gradient-to-r from-orange-300 to-orange-600 border-black">Ödeme yap</button>
+    </div>
+    <script src="/scripts/loading.js"></script>
+</body>
+</html>
